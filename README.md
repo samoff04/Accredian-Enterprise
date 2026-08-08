@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Accredian Enterprise
 
-## Getting Started
+Accredian Enterprise is a partial clone of the Accredian Enterprise landing page, built with Next.js for enterprise B2B upskilling programs. It features a fully responsive marketing site with a custom design system, a functional lead-capture form backed by a real API route, and a component library structured for reuse and easy content management.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+* Responsive landing page across mobile, tablet, and desktop breakpoints
+* Custom design system with a dedicated color, type, and layout token set
+* Reusable, typed section components decoupled from content
+* Functional lead capture form with server-side validation and API integration
+* Accessible interaction patterns including keyboard focus states and ARIA attributes on interactive elements
+* Centralized content layer for editing copy without touching layout code
+
+## Overview
+
+![alt text](docs/image.png)
+![alt text](docs/image-1.png)
+![alt text](docs/image-2.png)
+![alt text](docs/image-3.png)
+
+## Tech Stack
+
+### Frontend
+
+* Next.js 14, App Router
+* TypeScript
+* Tailwind CSS
+* next/font, Fraunces, Inter, IBM Plex Mono
+
+### Backend
+
+* Next.js Route Handlers
+* Node.js runtime, Vercel serverless functions
+
+## Project Structure
+
+```text
+Accredian-Enterprise
+│
+├── app
+│   ├── api
+│   │   └── leads
+│   │       └── route.ts
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── globals.css
+│   └── icon.svg
+│
+├── components
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── TrustedBy.tsx
+│   ├── WhyChooseUs.tsx
+│   ├── Programs.tsx
+│   ├── HowItWorks.tsx
+│   ├── Testimonials.tsx
+│   ├── FAQ.tsx
+│   ├── LeadForm.tsx
+│   └── Footer.tsx
+│
+├── lib
+│   └── data.ts
+│
+├── .gitignore
+├── next.config.mjs
+├── tailwind.config.ts
+├── tsconfig.json
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+git clone https://github.com/samoff04/Accredian-Enterprise.git
+cd Accredian-Enterprise
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The app runs on `http://localhost:3000`. No environment variables are required.
 
-## Learn More
+For a production build:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Page Sections
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Hero** — primary value proposition and the certificate-motif signature element
+* **Trusted By** — animated partner logo marquee
+* **Why Choose Us** — value proposition cards
+* **Programs** — catalog of enterprise learning tracks
+* **How It Works** — four-stage engagement process
+* **Testimonials** — customer proof points
+* **FAQ** — accordion of common enterprise buyer questions
+* **Lead Form** — contact capture, submits to the API layer
 
-## Deploy on Vercel
+## API Endpoints
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Leads
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Method | Endpoint     | Description                          |
+| ------ | ------------ | ------------------------------------- |
+| POST   | /api/leads    | Submits a new lead, server-validated  |
+| GET    | /api/leads    | Returns captured leads for the session |
+
+
+## Author
+
+Samarth Varshney
