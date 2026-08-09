@@ -1,154 +1,176 @@
 export const navLinks = [
-  { label: "Why Accredian", href: "#why" },
-  { label: "Programs", href: "#programs" },
-  { label: "How it works", href: "#process" },
-  { label: "Results", href: "#results" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Home", href: "#top" },
+  { label: "Stats", href: "#stats" },
+  { label: "Clients", href: "#clients" },
+  { label: "Accredian Edge", href: "#edge" },
+  { label: "CAT", href: "#cat" },
+  { label: "How It Works", href: "#process" },
+  { label: "FAQs", href: "#faq" },
+  { label: "Testimonials", href: "#testimonials" },
 ];
 
-export const partnerLogos = [
-  "ADP", "Infosys", "Wipro", "HCL", "TCS", "IBM",
-  "Accenture", "Cognizant", "Deloitte", "KPMG", "EY", "PwC",
-];
+export const heroChecks = ["Tailored Solutions", "Industry Insights", "Expert Guidance"];
 
 export const stats = [
-  { value: "500+", label: "Enterprise partners" },
-  { value: "1M+", label: "Learners trained" },
-  { value: "94%", label: "Program completion" },
-  { value: "200+", label: "Cohort-ready programs" },
+  { value: "10K+", label: "Professionals Trained For Exceptional Career Success" },
+  { value: "200+", label: "Sessions Delivered With Unmatched Learning Excellence" },
+  { value: "5K+", label: "Active Learners Engaged In Dynamic Courses" },
 ];
 
-export const pillars = [
+export const clientLogos = ["Reliance Industries", "HCL", "IBM", "CRIF", "ADP", "Bayer"];
+
+export const edgePoints = [
   {
-    tag: "01",
-    title: "Faculty from IIT & IIM",
-    body: "Every curriculum is built and reviewed alongside premier institute faculty, so course depth holds up to internal technical bars, not just marketing copy.",
+    title: "Tailored Solutions",
+    body: "Programs customized to your organization's goals and challenges.",
   },
   {
-    tag: "02",
-    title: "Curriculum mapped to your stack",
-    body: "Capstones swap in your cloud provider, your LLM framework, and your security constraints, so teams practise on problems that look like Monday morning.",
+    title: "Expert Guidance",
+    body: "Learn from industry leaders with real-world success.",
   },
   {
-    tag: "03",
-    title: "Cohort accountability",
-    body: "Structured cohorts, live mentor check-ins, and peer review keep completion rates high instead of letting a course quietly go stale in someone's inbox.",
+    title: "Innovative Framework",
+    body: "Proprietary methods for impactful, application-driven results.",
   },
   {
-    tag: "04",
-    title: "A dashboard L&D can defend",
-    body: "Attendance, assessment scores, and skill-gap closure roll up into one report you can bring straight into a budget review.",
+    title: "Advanced Technology",
+    body: "State-of-the-art LMS for seamless learning experiences.",
+  },
+  {
+    title: "Diverse Offerings",
+    body: "Courses across industries, skill levels, and emerging fields.",
+  },
+  {
+    title: "Proven Impact",
+    body: "Trusted by leading organizations for measurable ROI.",
+  },
+  {
+    title: "Flexible Delivery",
+    body: "Online and offline options tailored to your needs.",
   },
 ];
 
-export const programs = [
+export const domainExpertise = [
+  { title: "Product & Innovation Hub" },
+  { title: "Gen-AI Mastery" },
+  { title: "Leadership Elevation" },
+  { title: "Tech & Data Insights" },
+  { title: "Operations Excellence" },
+  { title: "Digital Enterprise" },
+  { title: "Fintech Innovation Lab" },
+];
+
+export const courseSegmentation = [
   {
-    category: "Artificial Intelligence",
-    title: "Generative AI & LLM Engineering",
-    duration: "12 weeks",
-    format: "Live + async",
-    outcome: "Ship a production RAG pipeline on your own stack.",
+    title: "Program Specific",
+    body: "Certificate, Executive, Post Graduate Certificate",
   },
   {
-    category: "Data",
-    title: "Applied Data Science for Enterprise Teams",
-    duration: "16 weeks",
-    format: "Cohort-based",
-    outcome: "Move from dashboards to decision-ready models.",
+    title: "Industry Specific",
+    body: "IT, Healthcare, Retail, Finance, Education, Manufacturing",
   },
   {
-    category: "Leadership",
-    title: "Executive AI Fluency for Managers",
-    duration: "6 weeks",
-    format: "Live sessions",
-    outcome: "Brief, budget, and evaluate AI initiatives with confidence.",
+    title: "Topic Specific",
+    body: "Machine Learning, Design, Analytics, Cybersecurity, Cloud",
   },
   {
-    category: "Product",
-    title: "AI Product Management Intensive",
-    duration: "8 weeks",
-    format: "Live + capstone",
-    outcome: "Scope and ship an AI feature from spec to launch.",
+    title: "Level Specific",
+    body: "Senior Leadership, Mid-Career Professionals, Freshers",
+  },
+];
+
+export const whoShouldJoin = [
+  {
+    title: "Tech Professionals",
+    body: "Enhance expertise, embrace tech, drive innovation.",
   },
   {
-    category: "Engineering",
-    title: "MLOps & Applied Machine Learning",
-    duration: "14 weeks",
-    format: "Cohort-based",
-    outcome: "Own a model from training through to monitoring.",
+    title: "Non-Tech Professionals",
+    body: "Adapt digitally, collaborate in tech environments.",
   },
   {
-    category: "Leadership",
-    title: "CXO Digital Transformation Track",
-    duration: "10 weeks",
-    format: "Live + advisory",
-    outcome: "Set a defensible, phased AI roadmap for your org.",
+    title: "Emerging Professionals",
+    body: "Develop powerful skills for rapid career growth.",
   },
+  {
+    title: "Senior Professionals",
+    body: "Strengthen leadership, enhance strategic decisions.",
+  },
+];
+
+export const catFramework = [
+  { step: "Concept", body: "Foundational knowledge across the domain." },
+  { step: "Application", body: "Practical implementation of core concepts." },
+  { step: "Tools", body: "Resources and platforms used in real projects." },
 ];
 
 export const process = [
   {
-    step: "Discover",
-    detail:
-      "A skill-gap diagnostic with your engineering and business leads maps where your teams actually stand today.",
+    step: "Skill Gap Analysis",
+    detail: "Assess team skill gaps and developmental needs.",
   },
   {
-    step: "Design",
-    detail:
-      "Faculty and Accredian curriculum leads co-build a syllabus, swapping in your tools, case studies, and internal guardrails.",
+    step: "Customized Training Plan",
+    detail: "Create a tailored roadmap addressing organizational goals.",
   },
   {
-    step: "Deploy",
-    detail:
-      "Cohorts launch with mentor assignment, platform access, and an orientation session — no learner left to self-onboard.",
-  },
-  {
-    step: "Measure",
-    detail:
-      "Monthly business reviews turn attendance and assessment data into a report your leadership team can act on.",
+    step: "Flexible Program Delivery",
+    detail: "Deliver adaptable programs aligned with industry and organizational needs.",
   },
 ];
+
+export const faqCategories = ["About the Course", "About the Delivery", "Miscellaneous"];
+
+export const faqs: Record<string, { q: string; a: string }[]> = {
+  "About the Course": [
+    {
+      q: "What types of corporate training programs does Accredian offer?",
+      a: "Programs spanning Product & Innovation, Gen-AI, Leadership, Tech & Data, Operations, Digital Enterprise, and Fintech, structured as Certificate, Executive, or Post Graduate Certificate tracks.",
+    },
+    {
+      q: "What domain specializations are available?",
+      a: "Industry-specific tracks across IT, Healthcare, Retail, Finance, Education, and Manufacturing, alongside topic-specific tracks like Machine Learning, Analytics, Cybersecurity, and Cloud.",
+    },
+  ],
+  "About the Delivery": [
+    {
+      q: "Is training delivered online, offline, or both?",
+      a: "Both. Programs are delivered through flexible online and offline formats tailored to your organization's needs.",
+    },
+    {
+      q: "What does the CAT framework mean for delivery?",
+      a: "Every program moves learners through Concept, Application, and Tools, so training goes beyond theory into practical, project-based execution.",
+    },
+  ],
+  "Miscellaneous": [
+    {
+      q: "Who should enroll their teams?",
+      a: "Tech professionals, non-tech professionals, emerging professionals, and senior professionals each have a track suited to their role and career stage.",
+    },
+    {
+      q: "How is training impact measured?",
+      a: "Through a state-of-the-art LMS tracking engagement and outcomes, with programs designed around measurable, organization-specific ROI.",
+    },
+  ],
+};
 
 export const testimonials = [
   {
     quote:
-      "Our senior architects went through a customized Generative AI engineering path, and the hands-on capstones let the team bring RAG work into client projects within weeks.",
-    name: "L&D Director",
-    role: "Global IT Services Firm",
+      "Accredian's programs were turned around with genuine dedication and expertise, matching our organization's learning goals end to end.",
+    name: "L&D Leader",
+    role: "Enterprise Partner",
   },
   {
     quote:
-      "We onboarded 300 managers across three geographies at once. The reporting made tracking progress straightforward, and completion came in far above what we'd seen before.",
-    name: "Head of Learning",
-    role: "Financial Services Enterprise",
-  },
-  {
-    quote:
-      "The combination of institute-grade curriculum and live mentorship changed how our engineers approach ML projects — several now lead initiatives independently.",
-    name: "VP of Engineering",
-    role: "Enterprise SaaS Company",
+      "The structured, application-driven approach meant our teams left with practical skills, not just completed slides.",
+    name: "HR Director",
+    role: "Enterprise Partner",
   },
 ];
 
-export const faqs = [
-  {
-    q: "How are programs customized for our organization?",
-    a: "We start with a skill-gap discovery workshop with your engineering and business leaders, then adapt capstones, environments, and case studies to your stack, cloud provider, and security guidelines.",
-  },
-  {
-    q: "Which institutions co-certify the programs?",
-    a: "Certificates are co-designed and, depending on the track, co-certified with IIT and IIM faculty along with select global university partners.",
-  },
-  {
-    q: "Can this integrate with our corporate LMS?",
-    a: "Yes. Programs can be delivered or reported through SCORM / xAPI packages so progress shows up inside your existing LMS.",
-  },
-  {
-    q: "What's the minimum cohort size?",
-    a: "Dedicated enterprise cohorts typically start at 15 learners. Smaller teams can join a scheduled multi-company cohort instead.",
-  },
-  {
-    q: "How is impact measured?",
-    a: "A live dashboard tracks attendance, assessment scores, and skill-gap closure, backed by monthly business reviews with your L&D team.",
-  },
-];
+export const contact = {
+  email: "enterprise@accredian.com",
+  address: "4th Floor, 250, Phase IV, Udyog Vihar, Sector 18, Gurugram, Haryana",
+  copyright: "Accredian, A Brand of FullStack Education Pvt Ltd. All Rights Reserved",
+};

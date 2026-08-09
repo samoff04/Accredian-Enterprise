@@ -1,33 +1,41 @@
+"use client";
+
+import { useState } from "react";
 import { testimonials } from "@/lib/data";
 
 export default function Testimonials() {
+  const [active, setActive] = useState(0);
+
   return (
-    <section id="results" className="section-padding bg-navy text-paper">
-      <div className="mx-auto max-w-content px-6">
-        <div>
-          <p className="eyebrow font-mono text-xs uppercase tracking-wide text-gold-light">
-            Results
-          </p>
+    <section id="testimonials" className="border-y border-slate-100 bg-slate-50 py-20">
+      <div className="mx-auto max-w-content px-6 text-center">
+        <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+          What Our <span className="text-brand">Partners</span> Say
+        </h2>
 
-          <h2 className="mt-3 font-display text-3xl font-semibold text-paper md:text-4xl">
-            What L&amp;D leaders say after a cohort ships.
-          </h2>
-        </div>
-
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
           {testimonials.map((t) => (
-            <figure
-              key={t.name}
-              className="flex flex-col justify-between rounded-2xl border border-navy-400 bg-navy-700/50 p-7"
-            >
-              <blockquote className="font-display text-lg italic leading-relaxed text-navy-100">
+            <figure key={t.name} className="rounded-2xl border border-slate-100 bg-white p-8 text-left shadow-sm">
+              <blockquote className="text-base leading-relaxed text-slate-700">
                 &quot;{t.quote}&quot;
               </blockquote>
-
-              <figcaption className="mt-6 border-t border-navy-400 pt-4 font-mono text-xs text-gold-light">
-                {t.name} · {t.role}
+              <figcaption className="mt-5 text-sm font-semibold text-brand">
+                {t.name} &middot; {t.role}
               </figcaption>
             </figure>
+          ))}
+        </div>
+
+        <div className="mt-8 flex justify-center gap-2">
+          {testimonials.map((_, i) => (
+            <button
+              key={i}
+              aria-label={`Show testimonial ${i + 1}`}
+              onClick={() => setActive(i)}
+              className={`h-2 w-2 rounded-full transition-colors ${
+                active === i ? "bg-brand" : "bg-slate-300"
+              }`}
+            />
           ))}
         </div>
       </div>

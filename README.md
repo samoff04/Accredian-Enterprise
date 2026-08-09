@@ -17,6 +17,10 @@ Accredian Enterprise is a partial clone of the Accredian Enterprise landing page
 ![alt text](docs/image-1.png)
 ![alt text](docs/image-2.png)
 ![alt text](docs/image-3.png)
+![alt text](docs/image-4.png)
+![alt text](docs/image-5.png)
+![alt text](docs/image-6.png)
+
 
 ## Tech Stack
 
