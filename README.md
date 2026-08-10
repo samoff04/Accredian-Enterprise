@@ -102,17 +102,6 @@ npm run build
 npm start
 ```
 
-## Page Sections
-
-* **Hero** — primary value proposition and the certificate-motif signature element
-* **Trusted By** — animated partner logo marquee
-* **Why Choose Us** — value proposition cards
-* **Programs** — catalog of enterprise learning tracks
-* **How It Works** — four-stage engagement process
-* **Testimonials** — customer proof points
-* **FAQ** — accordion of common enterprise buyer questions
-* **Lead Form** — contact capture, submits to the API layer
-
 ## API Endpoints
 
 ### Leads
