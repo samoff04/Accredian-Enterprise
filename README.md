@@ -38,38 +38,49 @@ Accredian Enterprise is a partial clone of the Accredian Enterprise landing page
 
 ## Project Structure
 
+## Project Structure
+
 ```text
 Accredian-Enterprise
 │
-├── app
+├── app/
 │   ├── api
 │   │   └── leads
 │   │       └── route.ts
-│   ├── layout.tsx
-│   ├── page.tsx
 │   ├── globals.css
-│   └── icon.svg
+│   ├── icon.svg
+│   ├── layout.tsx
+│   └── page.tsx
 │
-├── components
-│   ├── Navbar.tsx
-│   ├── Hero.tsx
-│   ├── TrustedBy.tsx
-│   ├── WhyChooseUs.tsx
-│   ├── Programs.tsx
-│   ├── HowItWorks.tsx
-│   ├── Testimonials.tsx
+├── components/
+│   ├── AccredianEdge.tsx
+│   ├── CATFramework.tsx
+│   ├── CTABanner.tsx
+│   ├── Clients.tsx
+│   ├── DomainExpertise.tsx
 │   ├── FAQ.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── HowItWorks.tsx
 │   ├── LeadForm.tsx
-│   └── Footer.tsx
+│   ├── Navbar.tsx
+│   ├── Stats.tsx
+│   ├── Testimonials.tsx
+│   └── WhoShouldJoin.tsx
 │
-├── lib
+├── lib/
 │   └── data.ts
 │
+├── docs/
+├── .eslintrc.json
 ├── .gitignore
+├── next-env.d.ts
 ├── next.config.mjs
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
 ├── tailwind.config.ts
 ├── tsconfig.json
-├── package.json
 └── README.md
 ```
 
